@@ -2,18 +2,18 @@
 
 - [React-native](https://facebook.github.io/react-native/) is a good platform to develop cross platform mobile applications. The developers who are developing mobile applications in react-native already struggle though the lifecycle of opening command prompt, starting the server and running the application and repeating this life cycle over and over until you get the stable output on your device.
 
-- To overcome this limitation [React-native-tools-repository](https://github.com/zaidpathanGit/React-native-tools-repository/) can be help full as it provides the different scripts to accomplish the cycle easily.
+- To overcome this limitation [React-native-tools-repository](https://github.com/zaidpathanGit/React-native-tools-repository/) can be helpfull as it provides the scripts to accomplish the lifecycle easily.
 
 # Pre-Requirements
 
-* Windows running computer.
-* Android studio should be installed.
+* Windows os running computer.
+* Android studio, Android SDK, Emulator component should be installed.
 * React-native should be installed.
-* Basics of working with command prompt(cmd) in windows.
+* Basics of working with command prompt(cmd) in windows os.
 
 # How to use ??
 
-Step 1. Create a folder and copy/move your all react-native projects inside that folder. (Optional)
+Step 1. Create a new folder and copy/move your all react-native projects inside that folder. (Optional)
 
 Step 2. Open `reactConfiguration.settings` file and made the following changes.
 
@@ -35,7 +35,7 @@ Step 4. You can wait for the `Dependency graph done.` message or you can also ex
 
 Step 5. Once your server and emulator is working properly now you are ready to run your project. You need to execute the file `runAndroid.bat` to build, compile and run your react-native project.
 
->When the file has been executed the directories are listed in which it shows the created react-native projects and then you need to enter the project name to execute build, compile and run your project for android system.
+>When the file has been executed the directories are listed in which it shows the created react-native projects and then you need to enter the project name to build, compile and run your project for android system.
 
 Step 6. Finish.
 
