@@ -1,6 +1,10 @@
 @echo off
 rem "Code to turn off echo to avoid printing code on console"
 
+rem "Code to run script as administrator"
+set "params=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
 rem "Code to change users current directory to the directory where all react native projects are stored"
 rem "OLD CODE : cd C:\Users\COOL ZAID\Documents\react_native_projects\"
 
@@ -32,4 +36,6 @@ rem "Code to clear the screen"
 cls
 
 rem "Code to run project for android"
-react-native run-android
+npx react-native run-android
+
+cd ../
